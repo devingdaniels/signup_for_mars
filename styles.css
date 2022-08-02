@@ -15,7 +15,6 @@ p{
     margin-top: 15px;
 }
 
-
 input {
     border: 1px solid #000;
     margin-bottom: 15px;
@@ -62,7 +61,7 @@ a{
     color: white;
     height: max-content;
     width: 50%;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .rocket-icon{
@@ -98,19 +97,22 @@ a{
 padding-left: 20px;
 background: rgba(0, 0, 0, 0.5);
 padding-bottom: 15px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
 }
 
 #form-data{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     
 }
 
 .fieldset-block{
     display: flex;
     flex-wrap: wrap;
-    
-    
 }
 
 #submit-button{
@@ -147,7 +149,19 @@ padding-bottom: 15px;
     }
     #right-section{
         width: 100vw;
-        text-align: center;
-        justify-content: center;
+    }
+    
+    h3{
+        font-size: 1.2rem;
+    }
+   
+    #right-section{
+        height: 100vh;
+    }
+  }
+
+  @media (max-width: 860px){
+    #form-data{
+        align-items: center;
     }
   }
